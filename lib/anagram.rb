@@ -11,7 +11,7 @@ class Anagram
       nice = maybe.split('').to_a.sort{ |x,y| x <=> y }
       nice == gel ? answers << maybe : nil
     end
-    binding.pry
+    answers
   end
 
 end
