@@ -9,7 +9,7 @@ class Anagram
 
     array.each do |hm|
       nice = hm.split('').to_a.sort{ |x,y| x <=> y }
-
+      nice == gel ? hm : nil
     end
 binding.pry
   end
