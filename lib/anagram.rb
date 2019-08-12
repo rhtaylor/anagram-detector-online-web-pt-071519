@@ -6,7 +6,9 @@ class Anagram
   end
   def match(array)
     word.each_char do |x|
-      x == array.each{ |y| y.include? x }
+      x == array.each do |y| y.include? x 
+        binding.pry
+    end
 
   end
   end
