@@ -6,12 +6,12 @@ class Anagram
   end
   def match(array)
     gel = word.split("").to_a.sort{ |x,y| x <=> y }
-
-    array.each do |hm|
-      nice = hm.split('').to_a.sort{ |x,y| x <=> y }
-      nice == gel ? hm : nil
+    answers = []
+    array.each do |maybe|
+      nice = maybe.split('').to_a.sort{ |x,y| x <=> y }
+      nice == gel ? answers << maybe : nil
     end
-
+    binding.pry
   end
 
 end
