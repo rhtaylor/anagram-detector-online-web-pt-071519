@@ -8,7 +8,7 @@ class Anagram
     gel = word.split("").to_a.sort{ |x,y| x <=> y }
 
     array.each do |hm|
-      hm.split('').to_a
+      nice = hm.split('').to_a.sort{ |x,y| x <=> y }
       binding.pry
     end
 
