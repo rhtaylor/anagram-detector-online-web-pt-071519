@@ -11,7 +11,7 @@ class Anagram
       nice = hm.split('').to_a.sort{ |x,y| x <=> y }
       nice == gel ? hm : nil
     end
-binding.pry
+
   end
 
 end
