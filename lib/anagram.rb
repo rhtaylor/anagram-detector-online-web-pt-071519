@@ -5,9 +5,11 @@ class Anagram
     @word = word
   end
   def match(array)
-    word.each_char do |x|
-      x == array.each do |y| y.include? x
-        binding.pry
+    gel = word.sort{ |x,y| x <=> y }
+
+    array.each do |hm|
+      hm.split('').to_a
+      binding.pry
     end
 
   end
